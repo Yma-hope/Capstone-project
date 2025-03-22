@@ -1,1 +1,106 @@
-.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/e59f873058.js" crossorigin="anonymous"></script>
+</head>
+<body class="bg-gray-200">
+    <!--Navbar section-->
+    <nav class="fixed top-0 w-full bg-black text-white flex justify-between items-center px-10 py-3 z-30">
+        <div class="text-3xl font-bold">Lark & Lens</div>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="photographers.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
+            <li><a href="about.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
+            <li><a href="gallery.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
+            <li><a href="contacts.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+        </ul>
+        <div class="md:hidden text-2xl cursor-pointer text-white">&#9776;</div>
+    </nav>
+    <!--Header Section-->
+    <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/Camera.jpg')">
+        <div class="bg-gray-100/20 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
+            <h1 class="text-4xl font-bold">Welcome to Lark & Lens!</h1>
+                <p class="mt-5">At Lark & Lens, we capture more than just moments—we capture stories, emotions, and the magic in the everyday.<br>
+                     Like a lark in flight, our photography is light, free, and full of life. Whether it's a fleeting glance or an unforgettable adventure, we turn memories into timeless art.
+
+                 Let’s create something beautiful together.<br></p>
+                <a href="photographers.html" class="inline-block mt-5 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-400 hover:text-black transition">Our Team</a>
+        </div>
+    </header>
+    <!--Main Section-->
+    <main  class="text-black text-flex">
+        <!--A few of the company's work -->
+        <section id="services" class="mb-10"> <!-- Makes cards lie side by side:inline-block -->
+            <h2 class="font-bold text-2xl text-center">Work Done</h2>
+            <div class="flex justify-center mt-5 gap-6 cursor-pointer text-center p-4"> <!-- 'grid grid-cols-1 md:grid-cols-3 gap-6' makes the cards lie side by side, fle-col(makes images lie side by side) -->
+                <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group"> <!-- Card effect formatting: bg-yellow-100 shadow-lg rounded-lg p-4 mt-3 hover:bg-yellow-400 transition md:20 -->
+                    <img src="assets/Pet photography.jpg" alt="pets" class="absolute inset-0  w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform-300 z-10">
+                        <h3 class="font-semibold text-center text-xl">Pet Photography </h3>
+                        <p class="text-center mt-3"></p>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group">
+                    <img src="assets/Copy-of-_ORL9228-interior....jpg" alt="interior" class="absolute inset-0  w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform-300 z-10">
+                        <h3 class="font-semibold text-center text-xl">Interior</h3>
+                        <p class="text-center mt-3"></p>
+                    </div>
+                </div>
+                <div class="relative w-full md:w-1/3 h-64 rounded-lg overflow-hidden shadow-lg group">
+                    <img src="assets/Portrait.jpg" alt="portrait" class="absolute inset-0  w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/40 flex flex-col justify-center items-center text-white transform scale-0 group-hover:scale-100 transition-transform-300 z-10">
+                        <h3 class="font-semibold text-center text-xl">Portraits</h3>
+                        <p class="text-center mt-3"></p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+    </main>
+    <!-- Footer Section -->
+      <footer class="bg-black text-white p-4">
+        <div class="max-w-6xl mx-auto grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <!-- About Section -->
+             <div>
+                <h3 class="text-lg font-semibold mb-2">About</h3>
+                <p class="text-gray-400">We are dedicated to providing top-notch web services.</p>
+             </div>
+             <!-- Quick Links -->
+              <div>
+                <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="index.html" class="text-white hover:text-gray-500 transition">Home</a></li>
+                    <li><a href="photographers.html" class="text-white hover:text-gray-500 transition">Photographers</a></li>
+                    <li><a href="about.html" class="text-white hover:text-gray-500 transition">About</a></li>
+                    <li><a href="gallery.html" class="text-white hover:text-gray-500 transition">Gallery</a></li>
+                    <li><a href="contacts.html" class="text-white hover:text-gray-500 transition">Contacts</a></li>
+                </ul>
+              </div>
+              <!-- Contact Section -->
+               <div>
+               <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
+               <p class="text-white hover:text-gray-500 transition cursor-pointer">Email: ymanjeri2@gmail.com</p>
+               <p class="text-white hover:text-gray-500 transition cursor-pointer">Phone: +123 4561 7890</p>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
+                <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+              </div>
+        </div>
+        <!--Copyright Section-->
+        <div class="text-center mt-2 pt-2 text-white">
+            <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
+        </div>
+      </footer>
+</body>
+</html>
