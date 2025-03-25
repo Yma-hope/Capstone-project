@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home | Lark & Lens</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/e59f873058.js" crossorigin="anonymous"></script>
 </head>
@@ -19,6 +19,18 @@
             <li><a href="contacts.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
         </ul>
         <div class="md:hidden text-2xl cursor-pointer text-white">&#9776;</div>
+        
+        <!-- Hidden Checkbox for Toggle -->
+        <input type="checkbox" id="menu-toggle" class="hidden peer">
+
+        <!-- Mobile Menu (Hidden by Default) -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
+            <a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Home</a>
+            <a href="photographers.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Photographers</a>
+            <a href="about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">About</a>
+            <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Gallery</a>
+            <a href="contacts.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Contacts</a>
+        </div>
     </nav>
     <!--Header Section-->
     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/Camera.jpg')">
@@ -66,13 +78,13 @@
         <div class="max-w-6xl mx-auto grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
             <!-- About Section -->
              <div>
-                <h3 class="text-lg font-semibold mb-2">About</h3>
-                <p class="text-gray-400">We are dedicated to providing top-notch web services.</p>
+                <h3 class="text-lg font-semibold mb-2">Let's Create Together </h3>
+                <p class="text-gray-400 text-lg">Have a vision you want to bring to life? Let's capture it, frame it, and make it timeless.</p>
              </div>
              <!-- Quick Links -->
               <div>
                 <h3 class="text-lg font-semibold mb-2">Quick Links</h3>
-                <ul class="space-y-2">
+                <ul class="space-y-2 text-lg">
                     <li><a href="index.html" class="text-white hover:text-gray-500 transition">Home</a></li>
                     <li><a href="photographers.html" class="text-white hover:text-gray-500 transition">Photographers</a></li>
                     <li><a href="about.html" class="text-white hover:text-gray-500 transition">About</a></li>
@@ -81,14 +93,14 @@
                 </ul>
               </div>
               <!-- Contact Section -->
-               <div>
-               <h3 class="text-lg font-semibold mb-2">Contact Us</h3>
-               <p class="text-white hover:text-gray-500 transition cursor-pointer">Email: ymanjeri2@gmail.com</p>
-               <p class="text-white hover:text-gray-500 transition cursor-pointer">Phone: +123 4561 7890</p>
-              </div>
+              <div>
+                <h2 class="text-lg font-semibold mb-2">Visit Our Studio</h2>
+                <p class="text-lg text-white mt-2">Amboseli Lane, Lavington, Nairobi, Kenya</p>
+                <p class="text-lg text-white">+254 746 786-397 | larkandlens@gmail.com</p> 
+               </div>
               <div>
                 <h3 class="text-lg font-semibold mb-2">Follow Us</h3>
-                <div class="flex space-x-4">
+                <div class="flex space-x-4 text-lg">
                         <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-facebook-f"></i></a>
                         <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-instagram"></i></a>
                         <a href="#" class="hover:text-gray-500 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer"><i class="fa-brands fa-x-twitter"></i></a>
@@ -98,7 +110,7 @@
               </div>
         </div>
         <!--Copyright Section-->
-        <div class="text-center mt-2 pt-2 text-white">
+        <div class="text-center mt-2 pt-2 text-white text-lg">
             <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
         </div>
       </footer>
