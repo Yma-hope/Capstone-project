@@ -12,19 +12,33 @@
     <nav class="fixed top-0 w-full bg-black text-white flex justify-between items-center px-10 py-3 z-30">
         <div class="text-3xl font-bold">Lark & Lens</div>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
-            <li><a href="photographers.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
-            <li><a href="about.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
-            <li><a href="gallery.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
-            <li><a href="contacts.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+            <li><a href="index.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="photographers.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
+            <li><a href="gallery.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
+            <li><a href="contacts.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
         </ul>
-        <div class="md:hidden text-2xl cursor-pointer text-white">&#9776;</div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden text-2xl cursor-pointer text-white" id="menu-btn">
+            &#9776;
+        </div>
+
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-6 py-5 md:hidden">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="photographers.html" class="hover:text-gray-300">Photographers</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="contacts.html" class="hover:text-gray-300">Contacts</a>
+    </div>
     <!--Header Section-->
     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url(assets/Camera.jpg);">
         <div class="bg-gray-100/20 text-xl p-5 rounded-lg" > <!-- bg-opacity-40 -->
             <h1 class="text-4xl font-bold">Meet the Artist Behind the Lens!</h1>
-                <p class="mt-5">Every photographer at Lark & Lens brings a unique vision to the art of storytelling.<br>
+                <p class="mt-5 text-white">Every photographer at Lark & Lens brings a unique vision to the art of storytelling.<br>
                      Get to know the creative minds turning fleeting moments into timeless memories.</p>
                 <a href="photographers.html" class="inline-block mt-5 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-400 hover:text-black transition">Our Team</a>
         </div>
@@ -34,29 +48,29 @@
         <h2 class="text-3xl font-semibold mb-6">Meet Our Team</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
             <div class="bg-white p-6 shadow-lg rounded-lg">
-                <img src="photographer1.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
+                <img src="assets/Snapchat-1163590807.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
+                <h3 class="text-xl font-medium mt-4">Hope Njeri</h3>
+                <p class="text-gray-600">Founder & Lead Photographer - Events Photographer</p>
+            </div>
+            <div class="bg-white p-6 shadow-lg rounded-lg">
+                <img src="assets/Lilo.Portrait.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
                 <h3 class="text-xl font-medium mt-4">Lilian Mwangi</h3>
-                <p class="text-gray-600">Founder & Lead Photographer</p>
+                <p class="text-gray-600">Creative Director and Interior Photographer</p>
             </div>
             <div class="bg-white p-6 shadow-lg rounded-lg">
-                <img src="photographer2.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
-                <h3 class="text-xl font-medium mt-4">John Smith</h3>
-                <p class="text-gray-600">Creative Director</p>
+                <img src="assets/pexels-divinetechygirl-1181686.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
+                <h3 class="text-xl font-medium mt-4">Emily Carter</h3>
+                <p class="text-gray-600">Portraits Photographer</p>
             </div>
             <div class="bg-white p-6 shadow-lg rounded-lg">
-                <img src="photographer2.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
-                <h3 class="text-xl font-medium mt-4">John Smith</h3>
-                <p class="text-gray-600">Creative Director</p>
+                <img src="assets/pexels-olenkabohovyk-3635872.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
+                <h3 class="text-xl font-medium mt-4">Daniel Rivera</h3>
+                <p class="text-gray-600">Pet and Animal Photographer</p>
             </div>
             <div class="bg-white p-6 shadow-lg rounded-lg">
-                <img src="photographer2.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
-                <h3 class="text-xl font-medium mt-4">John Smith</h3>
-                <p class="text-gray-600">Creative Director</p>
-            </div>
-            <div class="bg-white p-6 shadow-lg rounded-lg">
-                <img src="photographer2.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
-                <h3 class="text-xl font-medium mt-4">John Smith</h3>
-                <p class="text-gray-600">Creative Director</p>
+                <img src="assets/pexels-ante-emmanuel-3691197-29851368.jpg" alt="Photographer Name" class="w-32 h-32 mx-auto rounded-full object-cover">
+                <h3 class="text-xl font-medium mt-4">Adelaide Mireya</h3>
+                <p class="text-gray-600">Nature and Wildlife Photographer</p>
             </div>
         </div>
     </section>
@@ -102,5 +116,6 @@
             <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
         </div>
       </footer>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

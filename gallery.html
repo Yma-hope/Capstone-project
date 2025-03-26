@@ -12,19 +12,34 @@
     <nav class="fixed top-0 w-full bg-black text-white flex justify-between items-center px-10 py-3 z-30">
         <div class="text-3xl font-bold">Lark & Lens</div>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
-            <li><a href="photographers.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
-            <li><a href="about.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
-            <li><a href="gallery.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
-            <li><a href="contacts.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+            <li><a href="index.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="photographers.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
+            <li><a href="gallery.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
+            <li><a href="contacts.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
         </ul>
-        <div class="md:hidden text-2xl cursor-pointer text-white">&#9776;</div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden text-2xl cursor-pointer text-white" id="menu-btn">
+            &#9776;
+        </div>
+
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-6 py-5 md:hidden">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="photographers.html" class="hover:text-gray-300">Photographers</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="contacts.html" class="hover:text-gray-300">Contacts</a>
+    </div>
+
     <!--Header Section-->
     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center " style="background-image: url('assets/Camera.jpg')">
         <div class="bg-gray-100/20 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
-            <h1 class="text-4xl font-bold">Our Photographers!</h1>
-                <p class="mt-5">Distinct styles, one shared passion.<br></p>
+            <h1 class="text-4xl font-bold">Our Work!</h1>
+                <p class="mt-5 text-white">Distinct styles, one shared passion.<br></p>
                 <a href="gallery.html" class="inline-block mt-5 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-400 hover:text-black transition">Gallery</a>
         </div>
     </header>
@@ -39,15 +54,15 @@
                 Specializing in expressive portraits, Emily captures the raw beauty of human emotions.
             </p>
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-                <img src="emily1.jpg" alt="Emily's Work" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
-                <img src="emily2.jpg" alt="Emily's Work" class="rounded-lg w-full h-80 object-cover hover:scale-105 transition">
-                <img src="emily3.jpg" alt="Emily's Work" class="rounded-lg w-full h-56 object-cover hover:scale-105 transition">
+                <img src="assets/p1.JPG" alt="Emily's Work" class="rounded-lg w-full h-64 object-cover hover:scale-105 transition">
+                <img src="assets/Portrait-1 gallery.JPG" alt="Emily's Work" class="rounded-lg w-full h-100 object-cover hover:scale-105 transition">
+                <img src="assets/p3.JPG" alt="Emily's Work" class="rounded-lg w-full h-56 object-cover hover:scale-105 transition">
             </div>
         </div>
 
         <!-- Photographer 2 -->
         <div>
-            <h2 class="text-3xl font-semibold text-center mb-4">Joy Jerotich – Nature & Wildlife</h2>
+            <h2 class="text-3xl font-semibold text-center mb-4">Adelaide Mireya – Nature & Wildlife</h2>
             <p class="text-center text-gray-700 max-w-2xl mx-auto mb-6">
                 From majestic landscapes to rare wildlife moments, Joy captures the essence of nature’s beauty.
             </p>
@@ -143,5 +158,6 @@
             <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
         </div>
       </footer>
+      <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

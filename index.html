@@ -12,31 +12,34 @@
     <nav class="fixed top-0 w-full bg-black text-white flex justify-between items-center px-10 py-3 z-30">
         <div class="text-3xl font-bold">Lark & Lens</div>
         <ul class="hidden md:flex space-x-6">
-            <li><a href="index.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
-            <li><a href="photographers.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
-            <li><a href="about.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
-            <li><a href="gallery.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
-            <li><a href="contacts.html" class="hover:text-white transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+            <li><a href="index.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="photographers.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
+            <li><a href="gallery.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
+            <li><a href="contacts.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
         </ul>
-        <div class="md:hidden text-2xl cursor-pointer text-white">&#9776;</div>
-        
-        <!-- Hidden Checkbox for Toggle -->
-        <input type="checkbox" id="menu-toggle" class="hidden peer">
 
-        <!-- Mobile Menu (Hidden by Default) -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-md">
-            <a href="index.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Home</a>
-            <a href="photographers.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Photographers</a>
-            <a href="about.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">About</a>
-            <a href="gallery.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Gallery</a>
-            <a href="contacts.html" class="block py-2 px-4 text-gray-700 hover:bg-gray-100">Contacts</a>
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden text-2xl cursor-pointer text-white" id="menu-btn">
+            &#9776;
         </div>
+
     </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-16 left-0 w-full bg-black text-white flex flex-col items-center space-y-6 py-5 md:hidden">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="photographers.html" class="hover:text-gray-300">Photographers</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="contacts.html" class="hover:text-gray-300">Contacts</a>
+    </div>
+
     <!--Header Section-->
     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center" style="background-image: url('assets/Camera.jpg')">
         <div class="bg-gray-100/20 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
             <h1 class="text-4xl font-bold">Welcome to Lark & Lens!</h1>
-                <p class="mt-5">At Lark & Lens, we capture more than just moments—we capture stories, emotions, and the magic in the everyday.<br>
+                <p class="mt-5 text-white">At Lark & Lens, we capture more than just moments—we capture stories, emotions, and the magic in the everyday.<br>
                      Like a lark in flight, our photography is light, free, and full of life. Whether it's a fleeting glance or an unforgettable adventure, we turn memories into timeless art.
 
                  Let’s create something beautiful together.<br></p>
@@ -79,7 +82,7 @@
             <!-- About Section -->
              <div>
                 <h3 class="text-lg font-semibold mb-2">Let's Create Together </h3>
-                <p class="text-gray-400 text-lg">Have a vision you want to bring to life? Let's capture it, frame it, and make it timeless.</p>
+                <p class="text-white text-lg">Have a vision you want to bring to life? Let's capture it, frame it, and make it timeless.</p>
              </div>
              <!-- Quick Links -->
               <div>
@@ -114,5 +117,6 @@
             <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
         </div>
       </footer>
+      <script type="text/javascript" src="script.js" ></script>
 </body>
 </html>
