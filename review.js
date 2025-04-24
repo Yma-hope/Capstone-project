@@ -1,3 +1,14 @@
+ // Menu toggle for mobile
+ const menuBtn = document.getElementById("menu-btn");
+ const mobileMenu = document.getElementById("mobile-menu");
+
+ if (menuBtn && mobileMenu) {
+     menuBtn.addEventListener("click", () => {
+         mobileMenu.classList.toggle("hidden");
+     });
+ }; 
+  
+  
   const stars = document.querySelectorAll('#star-rating i');
   let selectedRating = 0;
 
