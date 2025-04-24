@@ -17,6 +17,7 @@
             <li><a href="about.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
             <li><a href="gallery.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
             <li><a href="contacts.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+            <li><a href="reviews.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Reviews</a></li>
         </ul>
 
         <div class="hidden md:block">
@@ -47,27 +48,63 @@
                 <a href="photographers.html" class="inline-block mt-5 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-400 hover:text-black transition">Our Team</a>
         </div>
     </header>
-    
-      <main class="p-6 max-w-6xl mx-auto">
+
+    <!--Main Section-->
+
+    <main class="p-6 max-w-6xl mx-auto">
+        <!-- Filter Section -->
+         
+        <section class="bg-gray-100 p-6 rounded-lg shadow-md mb-8 max-w-4xl mx-auto mt-10">
+          <h2 class="text-2xl font-bold mb-4 text-center">Filter Photographers</h2>
+          <div class="flex flex-col md:flex-row items-center gap-4 justify-center">
+            
+        <!-- Niche Filter -->
+         <select id="filter-niche" class="p-2 border border-gray-300 rounded-md w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-black">
+          <option value="all">All Niches</option>
+          <option value="wedding">Wedding</option>
+          <option value="portrait">Portrait</option>
+          <option value="sports">Sports</option>
+          <option value="product">Products</option>
+          <option value="fashion">Fashion</option>
+        <!-- Add more as needed -->
+         </select>
+
+        <!-- Location Filter -->
+         <select id="filter-location" class="p-2 border border-gray-300 rounded-md w-full md:w-1/3 focus:outline-none focus:ring-2 focus:ring-black">
+          <option value="all">All Locations</option>
+          <option value="nairobi">Nairobi</option>
+          <option value="mombasa">Mombasa</option>
+          <option value="kisumu">Kisumu</option>
+        <!-- Add more as needed -->
+         </select>
+
+        <!-- Apply Button -->
+          <button id="apply-filters" class="bg-black text-white px-6 py-2 rounded-md hover:bg-gray-800 transition w-full md:w-auto">
+             Apply Filters
+          </button>
+        </div>
+      </section>
+
+        
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           
           <!-- Photographer Card -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="assets/pexels-olenkabohovyk-3635872.jpg" alt="Photographer 1" class="w-full h-48 object-cover">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+            <img src="assets/Photographer 1.jpg" alt="Photographer 1" class="w-full h-48 object-cover">
             <div class="p-4">
-              <h2 class="text-xl font-semibold">Alex Mwangi</h2>
-              <p class="text-sm text-gray-600 mt-1">Portrait & Lifestyle Photographer</p>
-              <p class="text-sm mt-2">Known for capturing raw emotion and vibrant color stories.</p>
+              <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
+              <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
+              <p class="text-sm mt-2">Her timeless style and attention to detail sets her apart.</p>
               <div class="mt-3">
-                <a href="https://instagram.com/alexphotos" target="_blank" class="text-blue-600 hover:underline text-sm">Instagram</a> |
-                <a href="https://alexportfolio.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
+                <a href="https://instagram.com/zurilens" target="_blank" class="text-blue-600 hover:underline text-sm">Instagram</a> |
+                <a href="https://zuriphotography.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
               </div>
             </div>
           </div>
     
           <!-- Photographer Card -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="photographer2.jpg" alt="Photographer 2" class="w-full h-48 object-cover">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+            <img src="assets/Photographer 3.jpg" alt="Photographer 2" class="w-full h-48 object-cover">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
               <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
@@ -77,10 +114,11 @@
                 <a href="https://zuriphotography.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
               </div>
             </div>
+          </div>
 
             <!-- Photographer Card -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="photographer2.jpg" alt="Photographer 3" class="w-full h-48 object-cover">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+            <img src="assets/Photographer 2.jpg" alt="Photographer 3" class="w-full h-48 object-cover">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
               <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
@@ -90,10 +128,39 @@
                 <a href="https://zuriphotography.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
               </div>
             </div>
+          </div>
 
             <!-- Photographer Card -->
-          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-            <img src="photographer2.jpg" alt="Photographer 4" class="w-full h-48 object-cover">
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+            <img src="assets/Photographer 5.jpg" alt="Photographer 4" class="w-full h-48 object-cover">
+            <div class="p-4">
+              <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
+              <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
+              <p class="text-sm mt-2">Her timeless style and attention to detail sets her apart.</p>
+              <div class="mt-3">
+                <a href="https://instagram.com/zurilens" target="_blank" class="text-blue-600 hover:underline text-sm">Instagram</a> |
+                <a href="https://zuriphotography.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Photographer Card -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+              <img src="assets/Photographer 4.jpg" alt="Photographer 5" class="w-full h-48 object-cover">
+              <div class="p-4">
+                <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
+                <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
+                <p class="text-sm mt-2">Her timeless style and attention to detail sets her apart.</p>
+                <div class="mt-3">
+                  <a href="https://instagram.com/zurilens" target="_blank" class="text-blue-600 hover:underline text-sm">Instagram</a> |
+                  <a href="https://zuriphotography.com" target="_blank" class="text-blue-600 hover:underline text-sm">Portfolio</a>
+                </div>
+              </div>
+            </div>
+
+              <!-- Photographer Card -->
+          <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300" data-niche="wedding" data-locaction="nairobi">
+            <img src="assets/Photographer 6.jpg" alt="Photographer 6" class="w-full h-48 object-cover">
             <div class="p-4">
               <h2 class="text-xl font-semibold">Zuri Wanjiru</h2>
               <p class="text-sm text-gray-600 mt-1">Wedding & Event Specialist</p>
@@ -106,12 +173,12 @@
           </div>
 
           <div class="text-center mt-10">
-            <a href="apply.html" class="bg-black text-white px-6 py-3 rounded-full hover:bg-gray-700 transition">
+            <a href="contacts.html#application" class="text-center text-white bg-black content-center px-6 py-3 rounded-full hover:bg-gray-700 transition">
               Join Our Photographer Team
             </a>
           </div>
-
-        </main>
+          </div>
+    </main>
     <!-- Footer Section -->
     <footer class="bg-black text-white p-4">
         <div class="max-w-6xl mx-auto grid grid-col-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
@@ -155,6 +222,13 @@
             <p>&copy; 2025 Lark & Lens LTD.<br> All Rights Reserved.</p>
         </div>
       </footer>
+
+      <!-- Lightbox Modal -->
+       <div id="lightbox-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+        <button id="close-lightbox" class="absolute top-5 right-5 text-white text-3xl font-bold hover:text-gray-400">&times;</button>
+        <img id="lightbox-img" class="max-w-3xl max-h-[90vh] object-contain rounded shadow-lg" />
+      </div>
+
       <script type="text/javascript" src="photograph.js"></script>
 </body>
 </html>

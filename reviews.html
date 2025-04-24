@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews | Lark & Lens</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/e59f873058.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!--Navbar section-->
+    <nav class="fixed top-0 w-full bg-black text-white flex justify-between items-center px-10 py-3 z-30">
+        <div class="text-3xl font-bold cursor-pointer" href="index.html">Lark & Lens
+        </div>
+        <ul class="hidden md:flex space-x-6">
+            <li><a href="index.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Home</a></li>
+            <li><a href="photographers.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Photographers</a></li>
+            <li><a href="about.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">About</a></li>
+            <li><a href="gallery.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Gallery</a></li>
+            <li><a href="contacts.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Contacts</a></li>
+            <li><a href="reviews.html" class="hover:text-gray-300 transition relative after:content-[''] after:block after:h-0.5 after:w-full after:bg-white after:scale-x-0 after:transition-transform after:duration-300 hover:after:scale-x-100 cursor-pointer">Reviews</a></li>
+        </ul>
+
+        <div class="hidden md:block">
+            <i class="fa-solid mr-5"></i>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden text-2xl cursor-pointer text-white" id="menu-btn">
+            &#9776;
+        </div>
+
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden fixed top-16 right-0 w-70 bg-black text-white flex flex-col items-center space-y-6 py-5 md:hidden">
+        <a href="index.html" class="hover:text-gray-300">Home</a>
+        <a href="photographers.html" class="hover:text-gray-300">Photographers</a>
+        <a href="about.html" class="hover:text-gray-300">About</a>
+        <a href="gallery.html" class="hover:text-gray-300">Gallery</a>
+        <a href="contacts.html" class="hover:text-gray-300">Contacts</a>
+        <a href="contacts.html#booking" id="booking" class="inline-block mt-5 bg-black text-white px-6 py-3 rounded-full hover:bg-gray-400 hover:text-black transition">Book Now</a>
+    </div>
+
+     <!--Header Section-->
+     <header  class="h-screen bg-cover bg-center flex items-center justify-center text-black text-center " style="background-image: url('assets/Camera.jpg')">
+        <div class="bg-gray-100/20 text-xl p-8 rounded-lg" > <!-- bg-opacity-40 -->
+            <h1 class="text-4xl font-bold">Client Reviews!</h1>
+                <p class="mt-5 text-white">Whether you're looking to get booked or become part of the team, you're in the right place!<br></p>
+        </div>
+    </header>
+
+    <div class="grid gap-8 md:grid-cols-3 max-w-6xl mx-auto">
+        <!-- Review Card 1 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-700 italic">"I had never done a professional photoshoot before, but the team made me feel so comfortable. The portraits turned out beautifully!"</p>
+          <div class="mt-4">
+            <p class="font-semibold">— Brenda K.</p>
+            <p class="text-sm text-gray-500">Portrait, Kisumu</p>
+            <div class="mt-2 text-yellow-500 text-lg">
+              ★★★★☆
+            </div>
+          </div>
+        </div>
+      
+        <!-- Review Card 2 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-700 italic">"They really listened to what I wanted for my brand photos. The shots were crisp, clean, and totally on-brand."</p>
+          <div class="mt-4">
+            <p class="font-semibold">— Martin G.</p>
+            <p class="text-sm text-gray-500">Branding, Nairobi</p>
+            <div class="mt-2 text-yellow-500 text-lg">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+      
+        <!-- Review Card 3 -->
+        <div class="bg-gray-100 p-6 rounded-lg shadow hover:shadow-lg transition">
+          <p class="text-gray-700 italic">"Our newborn shoot was magical. The photographer was patient and so good with the baby. Photos are just priceless."</p>
+          <div class="mt-4">
+            <p class="font-semibold">— Lillian & Peter</p>
+            <p class="text-sm text-gray-500">Newborn, Nakuru</p>
+            <div class="mt-2 text-yellow-500 text-lg">
+              ★★★★★
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+    <!-- Review Submission with Rating -->
+<section class="bg-white py-10 px-4 md:px-10">
+    <h2 class="text-2xl font-bold text-center mb-6">Leave a Review</h2>
+  
+    <form class="max-w-xl mx-auto bg-gray-100 p-6 rounded-lg shadow">
+      <label for="review-text" class="block text-gray-700 font-semibold mb-2">Your Review</label>
+      <textarea id="review-text" rows="4" class="w-full p-3 border border-gray-300 rounded mb-4" placeholder="Write your review here..."></textarea>
+  
+      <label class="block text-gray-700 font-semibold mb-2">Your Rating</label>
+      <div id="star-rating" class="flex space-x-2 text-2xl text-yellow-400 cursor-pointer mb-4">
+        <i class="fa-regular fa-star" data-star="1"></i>
+        <i class="fa-regular fa-star" data-star="2"></i>
+        <i class="fa-regular fa-star" data-star="3"></i>
+        <i class="fa-regular fa-star" data-star="4"></i>
+        <i class="fa-regular fa-star" data-star="5"></i>
+      </div>
+  
+      <button type="submit" class="bg-black text-white px-4 py-2 rounded hover:bg-gray-800 transition">Submit Review</button>
+    </form>
+  </section>
+
+  <script src="review.js"></script>
+</body>
+</html>
